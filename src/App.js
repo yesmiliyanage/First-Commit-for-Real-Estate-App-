@@ -1,25 +1,44 @@
-import logo from './logo.svg';
-import './App.css';
+import Navbar from "./components/navbar.js";
+import About from "./components/about.js";
+import Contact from "./components/contact.js";
+import Home from "./components/home.js";
+import Favourites from "./components/favourites.js";
+import Search from "./components/search.js";
+import House from "./components/properties/house.js";
+import Flat from "./components/properties/flat.js";
+import Apartment from "./components/properties/apartment.js";
+import Footer from "./components/footer.js";
+import "./components/style.css";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar />
+      <div className="container">
+        <Routes>
+          <Route path="/favourites" element={<Favourites />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home/>}/>
+          <Route path="/search" element={<Search />} />
+          <Route path="/properties/house" element={<House />} />
+          <Route path="/properties/flat" element={<Flat />} />
+          <Route path="/properties/apartment" element={<Apartment />} />
+        </Routes>
+      </div>
+
+
+      <Footer/>
+
+      {/* <Route path="*" element={<NotFound />} /> */}
+
+    </>
+
+
   );
 }
 
 export default App;
+

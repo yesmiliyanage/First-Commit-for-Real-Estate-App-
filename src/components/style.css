@@ -1,0 +1,174 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    
+}
+
+/* styling for the navigation bar */
+.navbar{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 50px;
+    position: fixed;
+    width: 100%;
+    z-index: 5000;
+    top: 0;
+
+}
+
+.navbar ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+
+}
+
+.navbar a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.navbar li.active{
+    color: rgb(137, 102, 81);
+    position: relative;
+}
+
+.navbar li:hover{
+    color: rgb(137, 102, 81);
+}
+
+.site-name{
+    font-family: 'Abhaya Libre', serif;
+    font-size: 30px;
+}
+
+.heart-icon:hover, .search-icon:hover{
+    color: rgb(137, 102, 81);
+}
+
+.navbar .dropdown-label{
+    cursor: pointer;
+}
+
+.navbar .dropdown-menu{
+    position: absolute;
+    top: 150%;
+    left: 0;
+    list-style: none;
+    z-index: 2000;
+    width: 150px;
+    height: 100px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+}
+
+.navbar .dropdown-menu li a {
+    color: white;
+    font-size: 13px;
+    
+}
+
+.navbar .dropdown-menu .dropdown-option-div{
+    padding-left: 10px;
+    height: 34px;
+    padding-top: 5px;
+}
+
+.navbar .dropdown-menu .dropdown-option-div:hover{
+    background-color: grey;
+}
+
+/* styling for the navigation bar */
+.homepage-container{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.homepage-main{
+    background-image: url('../../public/images/homepage-picture.jpg');
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.homepage-title, .homepage-des{
+    color: white;
+    text-align: center;
+}
+
+.homepage-title{
+    font-family: 'Abhaya Libre', serif;
+    font-size: 40px;
+    margin-top: 150px;
+    padding: 0px 350px 0px 350px;
+    font-weight: 100;
+}
+
+.homepage-des{
+    padding: 40px 200px 0px 200px;
+    line-height: 30px;
+}
+
+.homepage-second{
+    height: 1000px;
+}
+
+.homepage-second-title{
+    font-family: 'Abhaya Libre', serif;
+    margin-top: 30px;
+    font-size: 35px;
+    text-align: center;
+    font-weight: 200;
+}
+
+/* styling for the footer */
+.footer{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(173, 173, 173);
+    width: 100%;
+}
+
+.footer-copyright{
+    font-size: 15px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.footer-content ul{
+    display: flex;
+    list-style: none;
+    gap: 6rem;
+    padding-left: 0;
+    justify-content: center;
+}
+
+.footer-content{
+    padding-top: 10px;
+    justify-content: space-around;
+}
+
+.footer-icon a{
+    color: black;
+    font-size: 18px;
+}
+
+
+
+
