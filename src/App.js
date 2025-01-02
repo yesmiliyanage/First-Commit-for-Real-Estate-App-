@@ -7,6 +7,7 @@ import Search from "./components/search.js";
 import House from "./components/properties/house.js";
 import Flat from "./components/properties/flat.js";
 import Apartment from "./components/properties/apartment.js";
+import Property from "./components/property.js";
 import Footer from "./components/footer.js";
 import "./components/style.css";
 import { Route, Routes } from "react-router-dom";
@@ -26,13 +27,12 @@ function App() {
           <Route path="/properties/house" element={<House />} />
           <Route path="/properties/flat" element={<Flat />} />
           <Route path="/properties/apartment" element={<Apartment />} />
+          <Route path="/property/:id" element={<Property/>}/>
         </Routes>
       </div>
 
 
       <Footer/>
-
-      {/* <Route path="*" element={<NotFound />} /> */}
 
     </>
 

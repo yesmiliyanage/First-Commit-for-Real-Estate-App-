@@ -7,6 +7,123 @@ body{
     
 }
 
+/* styling for cards */
+.card-container{
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid gray; */
+    width: 600px;
+    height: 700px;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.image-container{
+   
+    height: 500px;
+}
+
+.image-container img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.card-heart-icon{
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    font-size: 25px;
+    color: white;
+}
+
+.card-heart-icon:hover{
+    cursor: pointer;
+    color: rgb(226, 149, 149);
+}
+
+.selected{
+    cursor: pointer;
+    color: rgb(194, 41, 41);
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    font-size: 25px;
+}
+
+.card-details-container{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid gray;
+    position: absolute;
+    right: 0;
+    top: 300px;
+    width: 470px;
+    height: 400px;
+    padding: 20px 20px;
+    justify-content: space-between;
+    background-color: white;
+    padding-bottom: 10px;
+}
+
+.card-title-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-title{
+    font-size: 35px;
+
+    
+}
+
+.card-id{
+    font-family: 'Abhaya Libre', serif;
+    font-size: 80px;
+    color: rgb(165, 165, 165);
+
+}
+
+.card-des-container{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
+}
+
+.card-description{
+    margin-bottom: 40px;
+    font-size: 18px;
+}
+
+.card-more-details{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-price{
+    font-size: 20px;
+    color: rgb(173, 157, 141);
+}
+
+.card-readmore-button{
+    border: none;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 17px 60px;
+    border: 2px solid black;
+}
+
+.card-readmore-button:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    transition: all 0.5s;
+}
+
+
+
 /* styling for the navigation bar */
 .navbar{
     background-color: rgb(0, 0, 0);
@@ -125,17 +242,237 @@ body{
     line-height: 30px;
 }
 
+.home-arrow-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 170px;
+    font-size: 30px;
+}
+
 .homepage-second{
-    height: 1000px;
+    height: auto;
 }
 
 .homepage-second-title{
     font-family: 'Abhaya Libre', serif;
-    margin-top: 30px;
+    margin-top: 50px;
     font-size: 35px;
     text-align: center;
     font-weight: 200;
 }
+
+/* .homepage-form-container{
+    display: flex;
+    justify-content: center;
+} */
+
+.homepage-form-container{
+    background-color: black;
+    width: 1100px;
+    height: 80px;
+    display: flex;
+    margin: auto;
+}
+
+.homepage-form-input{
+    background-color: black;
+    width: 180px;
+    height: 100%;
+    border-right: 1px solid rgb(128, 128, 128);
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px 10px 10px;
+    gap: 1rem;
+    
+}
+
+.homepage-form-input select{
+    cursor: pointer;
+    background-color: black;
+    border: none;
+    color: rgb(156, 156, 156);
+}
+
+.homepage-form-button{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 210px;
+}
+
+.homepage-form-button input[type="submit"]{
+    border: none;
+    padding: 10px 35px 10px 35px;
+    align-self: center;
+    cursor: pointer;
+}
+
+.homepage-form-button input[type="submit"]:hover{
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+    transition: all 0.5s;
+}
+
+.homepage-form-input input[type="number"]{
+    background-color: black;
+    border: none;
+    color: rgb(173, 173, 173);
+}
+
+.homepage-form-input label{
+    color: rgb(255, 255, 255);
+    padding-left: 3px;
+}
+
+.homepage-props{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+
+}
+
+.home-prop-row{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+/* styling for favourites page */
+.favourites-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 90px;
+    height: 100vh;
+    background-color: rgb(221, 221, 221);
+}
+
+.favs-title-container{
+    text-align: center;
+}
+
+.favs-main-title{
+    font-family: 'Abhaya Libre', serif;
+    font-weight: 200;
+    font-size: 30px;
+
+}
+
+.favs-sub-title{
+    width: 600px;
+    font-weight: 300;
+    text-align: center;
+}
+
+
+/* extra styling for propertyType page */
+.house-prop-main{
+    background-image: url('../../public/images/prop3/img2.jpg');
+    margin-bottom: 40px;
+}
+
+.flat-prop-main{
+    background-image: url('../../public/images/flatpage-main-picture.jpg');
+    margin-bottom: 40px;
+}
+
+.apartment-prop-main{
+    background-image: url('../../public/images/apartmentpage-main-pic.jpg');
+    margin-bottom: 40px;
+}
+
+/* styling for property page (This styling is valid for all the seven property pages) */
+.propertyPage-main{
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.propertyPage-main-title{
+    font-family: 'Abhaya Libre', serif;
+    color: white;
+    font-size: 86px;
+    font-weight: 100;
+}
+
+/* #propertyPage-main-01{
+    background-image: url('../../public/images/prop1/img1.jpg');
+} */
+
+#propertyPage-main-02{
+    background-image: url('../../public/images/prop2/img2.jpg');
+}
+
+#propertyPage-main-03{
+    background-image: url('../../public/images/prop3/img2.jpg');
+}
+
+#propertyPage-main-04{
+    background-image: url('../../public/images/prop4/img1.jpg');
+}
+
+#propertyPage-main-05{
+    background-image: url('../../public/images/prop5/img1.jpg');
+}
+
+#propertyPage-main-06{
+    background-image: url('../../public/images/prop6/img1.jpg');
+}
+
+#propertyPage-main-07{
+    background-image: url('../../public/images/prop7/img1.jpg');
+}
+
+/* styling for tabs */
+.tabs-container{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 60px;
+    width: 1000px;
+}
+
+.tab-buttons-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.tab-button{
+    border: none;
+    padding: 20px 100px;
+}
+
+.tab-button:hover{
+    cursor: pointer;
+}
+
+.tab-button.active-tab{
+    background-color: black;
+    color: white;
+}
+
+.tab-content-container{
+    height: 700px;
+    width: 1000px;
+    border-top: 1px solid black;
+    margin-bottom: 70px;
+}
+
+.tab-long-description{
+    padding: 40px 100px;
+    text-align: center;
+}
+
+.iframe-container iframe{
+    width: 1000px;
+    height: 600px;
+}
+
+
 
 /* styling for the footer */
 .footer{
@@ -168,6 +505,169 @@ body{
     color: black;
     font-size: 18px;
 }
+
+/* media quries for screens smaller than ipad screen size */
+
+/* for ipad screen size and smaller */
+@media (max-width: 1040px) {
+    .card-container{
+        display: flex;
+        flex-direction: column;
+        /* border: 2px solid gray; */
+        width: 430px;
+        height: 600px;
+        position: relative;
+        margin-bottom: 150px;
+        
+    }
+    
+    .image-container img{
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    
+    .card-details-container{
+        width: 300px;
+        height: 400px;
+        padding-bottom: 10px;
+    }
+    
+    .card-title-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .card-des-container{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 40px;
+    }
+    
+    .card-description{
+        margin-bottom: 40px;
+        font-size: 15px;
+    }
+    
+    .card-more-details{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .card-price{
+        font-size: 20px;
+        color: rgb(173, 157, 141);
+    }
+    
+    .card-readmore-button{
+        border: none;
+        text-decoration: none;
+        color: white;
+        background-color: black;
+        padding: 8px 10px;
+        border: 2px solid black;
+    }
+}
+
+
+
+@media (max-width: 1151px) {
+    
+}
+
+@media (max-width: 1330px){
+    .homepage-props{
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+    
+    }
+    
+    .home-prop-row{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 1164px){
+    .homepage-main{
+        background-image: url('../../public/images/homepage-picture.jpg');
+        height: auto;
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    
+    .homepage-title, .homepage-des{
+        color: white;
+        text-align: center;
+    }
+    
+    .homepage-title{
+        font-family: 'Abhaya Libre', serif;
+        font-size: 30px;
+        margin-top: 150px;
+        padding: 0px 100px 0px 100px;
+        font-weight: 100;
+    }
+    
+    .homepage-des{
+        padding: 40px 50px 0px 50px;
+        line-height: 30px;
+        height:auto;
+    }
+    
+    .home-arrow-container{
+        display: flex;
+        justify-content: center;
+        margin-top: 170px;
+        font-size: 30px;
+        padding-bottom: 50px;
+    }
+
+    .homepage-form-container{
+        width: 400px;
+        height: 80px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 450px;
+    }
+    
+    .homepage-form-input{
+        background-color: black;
+        width: 100%;
+        height: 100%;
+        border-right: 1px solid rgb(128, 128, 128);
+        display: flex;
+        flex-direction: column;
+        padding: 10px 10px 10px 10px;
+        gap: 1rem;
+    }
+    
+    .homepage-form-input select{
+        cursor: pointer;
+        background-color: black;
+        border: none;
+        color: rgb(156, 156, 156);
+    }
+    
+    .homepage-form-button{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       width: 400px;
+    }
+
+
+}
+
 
 
 
